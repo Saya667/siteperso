@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    border : 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: #FFEDCB;;
+}
+
+/* -- NAVBAR -- */
+
+header {
+    padding-top : 0.5%;
+    padding-bottom: 0.5%;
+    font-weight: 500;
+    background-color:#384454;
+    position: fixed;
+    top : 0px;
+    left : 0px;
+    width: 100%;
+}
+
+nav{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav span{
+    color: #FFFFFF;
+
+    font-size: 5vh;
+    margin : 1vh 0 1vh 1vw;
+}
+
+/* NAVLIST */
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style-type: none;
+    margin : 3vh 3vw 3vh 1vw;
+    font-size : 20px;
+}
+
+ul li a:link{
+    text-decoration: none;
+    color : whitesmoke;
+}
+
+ul li a:visited {
+    text-decoration: none;
+    color : whitesmoke;
+}
+
+ul li a:hover{
+    color: white;
+    font-weight: bold;
+}
+
+/* -- SECTIONS  -- */
+
+
+section:target{
+    display:flex ;
+}
+
+section:not(:target), section:target ~ #page1 {
+    display: none;
+}
+
+section{
+    align-items:center ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width : 80%;
+    margin: auto;
+    padding-top: 100px;
+    
+}
+
+section article{
+    background-color: white;
+    width: 45%;
+    height: 55vh;
+    min-height: 5vh;
+    margin-top : 50px;
+    margin-right: 10px;
+    margin-left: 10px;  
+      
+    /* -- BOX  -- */
+
+    box-shadow: -1px -1px 10px 7px rgba(102,98,98,0.76);
+    -webkit-box-shadow: -1px -1px 10px 7px rgba(102,98,98,0.76);
+    -moz-box-shadow: -1px -1px 10px 7px rgba(102,98,98,0.76);
+    border-radius: 20px;
+}
+
+section article p{
+    padding-left: 2%;
+}
+
+
+section label{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600 ;
+}
+
+/* -- Images -- */
+
+.div_img{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+img.img_box{
+    width: 35%;
+    height: fit-content;
+}
+
+#competences li a:target{
+    color : red;
+}
+
+
+
+/* -- Formulaire -- */
+
+Section#contact{
+    display: flex;
+    justify-content: center;
+    width : 100vw;
+    
+}
+
+input{
+    width: 350px;
+    height: 50px;
+    border : thin solid whitesmoke;
+    border-radius: 5px; 
+}
+
+.contact_us{
+    background-color:#fbdf93;
+    width: 20%;
+    height: 700px;
+    padding-left : 2% ;
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius: 20px;
+
+}
+
+.champs{
+    display: flex;
+    background-color: white;
+    height: 700px;
+    width: 35%;
+    padding-left : 2% ;
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius : 20px ;
+}
+
+.comment{
+    height: 100px;
+    width: 350px;
+    margin-bottom: 10%;
+}
+
+.bouton{
+    width: 150px;
+    margin-top : 2px ;
+    border-radius: 10px;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: white;
+}
